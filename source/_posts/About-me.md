@@ -3,7 +3,6 @@ title: About me
 date: 2015-01-01 11:11:30
 tags: .NET
 category: Programming
-
 ---
 
 ## 第一章
