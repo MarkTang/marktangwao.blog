@@ -2,7 +2,7 @@
 title: .NET Framework相关基础知识总结
 date: 2015-01-08 10:52
 category: [Programming,Backend]
-tags: Backend
+tags: [C#,.NET,SQL Server, Backend]
 ---
 
 
