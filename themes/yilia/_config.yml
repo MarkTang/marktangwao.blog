@@ -2,18 +2,23 @@
 
 menu:
   主页: /
-  摄影: /photos/
   归档: /archives/
-  诗词: /tags/poetry
+  #摄影: /photos/
+  #诗词: /tags/poetry
   #javascript: /tags/Javascript
   #作品: /works/
 
 # SubNav
 subnav:
-  github: "https://github.com/whyour"
-  #weibo: "#"
-  rss: /atom.xml
+  github: "https://github.com/marktang"
+  #weixin: "#"
+  jianshu: "#"
   #zhihu: "#"
+  mail: "mailto:marktangwao@foxmail.com"
+  #bilibili: "#"
+  #douban: "#"
+  #weibo: "#"
+  #rss: "#"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
@@ -21,7 +26,6 @@ subnav:
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  mail: "mailto:imwhyour@gmail.com"
   #facebook: "#"
   #google: "112887490923160312595"
   #twitter: "#"
@@ -47,7 +51,7 @@ show_all_link: '展开全文'
 # 数学公式
 mathjax: false
 # 是否在新窗口打开链接
-open_in_new: false
+open_in_new: true
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
@@ -55,9 +59,9 @@ reward_type: 0
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay:
+alipay: /assets/avatar.jpg
 # 微信二维码图片地址
-weixin:
+weixin: /assets/avatar.jpg
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
@@ -73,10 +77,10 @@ top: true
 # Miscellaneous
 baidu_analytics: '076da1b6e2c3047b2e7d6ed3e54cb180'
 google_analytics: 'UA-97038102-2'
-favicon: /uploads/favicon.ico
+favicon: /assets/tabbar-coding.ico
 
 #你的头像url
-avatar: /uploads/avatar.png
+avatar: /assets/avatar.jpg
 
 #是否开启分享
 share_jia: false
@@ -124,17 +128,20 @@ hyper_id: false
 isso: false
 
 disqusapi:
-  enable: true
+  enable: false
   forum: 'whyour'
-  site: 'https://ninesix.cc'
-  api: 'https://disqus.ninesix.cc'
+  #site: 'https://ninesix.cc'
+  site: ''
+  #api: 'https://disqus.ninesix.cc'
+  api: ''
   timeout: 2000
   mode: 2
   badge: '博主'
+
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
-  header:
+  header: '#4d4d4d'
   # 右滑板块背景
   slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
 
@@ -150,12 +157,12 @@ slider:
 #  friends: false
 smart_menu:
   innerArchive: '搜索'
-  friends: '友链'
+  friends: false #'友链'
   aboutme: '关于我'
 
 friends:
-  Whr: http://webwhr.vicp.net/
-  fanhaobai: https://www.fanhaobai.com
-  fooleap: https://fooleap.org
+  博客园: http://marktangwao.com
+  简书: http://marktangwao.com
+  微信公众号: http://marktangwao.com
 
-aboutme: A common web front-end developer.
+aboutme:  伏龙偌渊 @MarkTang <br>才疏学浅心不坏，纸短情长话略多。  <br><br>胆小认生，不易相处，<br>年轻无为，卖码为生。

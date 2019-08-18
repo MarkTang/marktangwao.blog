@@ -156,7 +156,8 @@ function init() {
   //subtile diy
   function diySubtile() {
     app.$set('isComplete', false)
-    window.fetch('https://api.ninesix.cc/yiyan', {
+    // window.fetch('https://api.ninesix.cc/yiyan', {
+    window.fetch('https://api.marktangwao.com', {
       method: 'get',
     })
       .then((res) => {
