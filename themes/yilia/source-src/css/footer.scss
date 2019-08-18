@@ -12,8 +12,21 @@
 	}
 }
 .footer-left{
-  float: left;
+	float: left;
+	.yiyan {
+		display: none;			
+		&.show {
+			display: block;
+		}
+	}
 }
 .footer-right{
   float: right;
+}
+.yiyan{
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	height: 20px;
+	margin: 0 auto;
 }

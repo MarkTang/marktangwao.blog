@@ -2,7 +2,7 @@
     width: 300px;
     height: 100%;
     position: fixed;
-    left: 0;
+    left: -40px;
     top: 0;
     z-index: 0;
     padding: 0;
@@ -24,12 +24,14 @@
     .tools-wrap, .tools-section{
         height: 100%;
         color: #e5e5e5;
-        width: 360px;
         overflow: hidden;
         overflow-y: auto;
         ::-webkit-scrollbar {
             display: none;
         }
+    }
+    .tools-wrap {
+        width: 300px;
     }
     .tools-section {
         .search-wrap {

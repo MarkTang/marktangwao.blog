@@ -2,24 +2,28 @@
 
 menu:
   主页: /
-  #随笔: /tags/随笔/
+  摄影: /photos/
+  归档: /archives/
+  诗词: /tags/poetry
+  #javascript: /tags/Javascript
+  #作品: /works/
 
 # SubNav
 subnav:
-  github: "https://github.com/marktang"
-  weixin: "#"
-  jianshu: "#"
-  zhihu: "#"
-  mail: "mailto:marktangwao@foxmail.com"
-  #bilibili: "#"
-  #douban: "#"
+  github: "https://github.com/whyour"
   #weibo: "#"
-  #rss: "#"
+  rss: /atom.xml
+  #zhihu: "#"
   #qq: "#"
+  #weixin: "#"
+  #jianshu: "#"
+  #douban: "#"
   #segmentfault: "#"
+  #bilibili: "#"
   #acfun: "#"
+  mail: "mailto:imwhyour@gmail.com"
   #facebook: "#"
-  #google: "#"
+  #google: "112887490923160312595"
   #twitter: "#"
   #linkedin: "#"
 
@@ -32,29 +36,32 @@ root: /
 
 # Content
 
+auto_excerpt:
+    enable: true
+    lines: 3
+
 # 文章太长，截断按钮文字
-excerpt_link: more
+excerpt_link: 查看更多
 # 文章卡片右下角常驻链接，不需要请设置为false
-show_all_link: '阅读全文'
-fancybox: true
+show_all_link: '展开全文'
 # 数学公式
 mathjax: false
+# 是否在新窗口打开链接
+open_in_new: false
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 0
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: /assets/avatar.jpg
+alipay:
 # 微信二维码图片地址
-weixin: /assets/avatar.jpg
+weixin:
 
 # 目录
-# 是否在新窗口打开链接
-open_in_new: true
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
-toc: 1
+toc: true
 # 根据自己的习惯来设置，如果你的目录标题习惯有标号，置为true即可隐藏hexo重复的序号；否则置为false
 toc_hide_index: true
 # 目录为空时的提示
@@ -64,15 +71,15 @@ toc_empty_wording: '目录，不存在的…'
 top: true
 
 # Miscellaneous
-baidu_analytics: ''
-google_analytics: ''
-favicon: /assets/tabbar-coding.ico
+baidu_analytics: '076da1b6e2c3047b2e7d6ed3e54cb180'
+google_analytics: 'UA-97038102-2'
+favicon: /uploads/favicon.ico
 
 #你的头像url
-avatar: /assets/avatar.jpg
+avatar: /uploads/avatar.png
 
 #是否开启分享
-share_jia: true
+share_jia: false
 
 #评论：1、多说；2、网易云跟帖；3、畅言；4、Disqus；5、Gitment
 #不需要使用某项，直接设置值为false，或注释掉
@@ -85,23 +92,49 @@ duoshuo: false
 wangyiyun: false
 
 #3、畅言
-changyan_appid: false
-changyan_conf: false
+#changyan_appid: 'cysICaeY8'
+#changyan_conf: 'prod_7e627d6c19ca2069795c4a11fd80bdd1'
 
 #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
-disqus: false
+#disqus: whyour
 
 #5、Gitment
-gitment_owner: false      #你的 GitHub ID
-gitment_repo: ''          #存储评论的 repo
+gitment_owner:      #你的 GitHub ID
+gitment_repo: 'gitment'          #存储评论的 repo
 gitment_oauth:
-  client_id: ''           #client ID
-  client_secret: ''       #client secret
+  client_id: '506197b4152589e35c1d'           #client ID
+  client_secret: '3215f8f1ae4a4a7ed7452aa87ceba83b76fd2e5b'       #client secret
 
+# Valine Comment system. https://valine.js.org
+valine:
+  enable: false # 如果你想使用valine，请将值设置为 true
+  appId: QFRlTDA90AaBrRPlTfDpK28M-gzGzoHsz # your leancloud appId
+  appKey: 54swobfsY14YC1hix74N38Wi # your leancloud appKey
+  notify: false # Mail notify
+  verify: false # Verify code
+  avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
+  placeholder: Just go go # Comment Box placeholder
+  guest_info: nick,mail,link # Comment header info
+  pageSize: 10 # comment list page size
+
+# 是否开启Hyper Comments，填写id则启用，false则禁用。http://hypercomments.com
+# Hyper Comments support. Write your id here, or false to disable
+hyper_id: false
+
+isso: false
+
+disqusapi:
+  enable: true
+  forum: 'whyour'
+  site: 'https://ninesix.cc'
+  api: 'https://disqus.ninesix.cc'
+  timeout: 2000
+  mode: 2
+  badge: '博主'
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
-  header: '#4d4d4d'
+  header:
   # 右滑板块背景
   slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
 
@@ -114,15 +147,15 @@ slider:
 # 如不需要，将该对应项置为false
 # 比如
 #smart_menu:
-  #friends: false
+#  friends: false
 smart_menu:
-  innerArchive: '所有文章'
-  friends: false #'友链'
+  innerArchive: '搜索'
+  friends: '友链'
   aboutme: '关于我'
 
 friends:
-  博客园: http://marktangwao.com
-  简书: http://marktangwao.com
-  微信公众号: http://marktangwao.com
+  Whr: http://webwhr.vicp.net/
+  fanhaobai: https://www.fanhaobai.com
+  fooleap: https://fooleap.org
 
-aboutme:  伏龙偌渊 @MarkTang <br>才疏学浅心不坏，纸短情长话略多。  <br><br>胆小认生，不易相处，<br>年轻无为，卖码为生。
+aboutme: A common web front-end developer.
