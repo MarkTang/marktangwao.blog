@@ -56,7 +56,7 @@ index_generator:
 # Category & Tag
 default_category: Common
 category_map: Programming, Backend, Frondend, Common, 随笔
-tag_map: Common, Backend, C#, .NET, .NET Core, Java, SQL Server, MySQL, Redis, ZooKeeper
+tag_map: Common, Backend, C#, .NET, .NET Core, ASP.NET MVC, Java, SQL Server, MySQL, Redis, ZooKeeper
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
