@@ -77,9 +77,9 @@ top: true
 # Miscellaneous
 baidu_analytics: '076da1b6e2c3047b2e7d6ed3e54cb180'
 google_analytics: 'UA-97038102-2'
-favicon: /assets/tabbar-coding.ico
 
 #你的头像url
+favicon: /assets/tabbar-coding.ico
 avatar: /assets/avatar.jpg
 
 #是否开启分享
