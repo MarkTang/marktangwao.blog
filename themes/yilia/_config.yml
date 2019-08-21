@@ -3,6 +3,7 @@
 menu:
   主页: /
   归档: /archives/
+  Asp.NET MVC: /tags/Asp-NET-MVC
   #摄影: /photos/
   #诗词: /tags/poetry
   #javascript: /tags/Javascript
@@ -42,7 +43,7 @@ root: /
 
 auto_excerpt:
     enable: true
-    lines: 3
+    lines: 2
 
 # 文章太长，截断按钮文字
 excerpt_link: 查看更多
