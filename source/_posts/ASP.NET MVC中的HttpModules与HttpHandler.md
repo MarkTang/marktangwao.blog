@@ -36,7 +36,7 @@ ASP.NET MVC请求处理过程是基于管道模型的，这个管道模型是由
 HTTP模块是实现了System.Web.IhttpModule接口的类。
 IHttpModule接口的声明：
 
-```c#
+```c
 public interface IHttpModule
 {
     void Init (HttpApplication context);
@@ -91,7 +91,7 @@ HttpModule通过在某些事件中注册，把自己插入ASP.NET请求处理管
 	第一步：创建一个类库ClassLibrary1
 	第二步：编写一个类实现IHttpModule接口
 
-```C#
+```c
  class TestModule : IHttpModule
  {
      public void Dispose()
@@ -105,7 +105,7 @@ HttpModule通过在某些事件中注册，把自己插入ASP.NET请求处理管
 
 第三步：在Init事件中注册EndRequest事件，并实现事件处理方法
 
-```C#	
+```c
 class TestModule : IHttpModule
 {
     public void Dispose(){}
@@ -123,13 +123,13 @@ class TestModule : IHttpModule
 
 第四步：在Web.Conofig中注册一下这个HttpModule模块
 
-~~~C#
+~~~c
 <httpModules>
   <add name="TestModule" type="ClassLibrary1.TestModule,ClassLibrary1"></add>
 </httpModules> 
 ~~~
 
->name：模块名称，一般是类名
+>cname：模块名称，一般是类名
 >type：有两部分组成，前半部分是命名空间和类名组成的全名，后半部分是程序集名称，如果类是直接放在App_Start文件夹中，那程序名称是App_Start。
 >	这样在Web站点是添加该类库的引用后，运行每个页面，会发现其源文件中都会加入“这是每个页面都会动态生成的文字。‘”这句话。同样的方法你也可以在其中加入JS代码。
 
@@ -142,7 +142,7 @@ class TestModule : IHttpModule
 	第一步：创建一个类库ClassLibrary1
 	第二步：编写一个类实现IHttpModule接口
 
-~~~C#
+~~~c
 class TestModule : IHttpModule
  {
      public void Dispose()
@@ -156,7 +156,7 @@ class TestModule : IHttpModule
 
 第三步：在Init事件中注册PreRequestHandlerExecute事件，并实现事件处理方法
 
-~~~C#
+~~~c
 class AuthenticModule : IHttpModule
 {
     public void Dispose(){}
@@ -182,7 +182,7 @@ class AuthenticModule : IHttpModule
 
 第四步：在登录页面的登录按钮请求的Action中加入下面代码
 
-~~~C#
+~~~c
 public ActionResult Login()
 {
     if(true) //判断用户名密码是否正确
@@ -203,7 +203,7 @@ public ActionResult Login()
 
 第五步：在Web.Conofig中注册一下这个HttpModule模块
 
-~~~C#
+~~~c
 <httpModules>
   <add name="TestModule" type="ClassLibrary1.TestModule,ClassLibrary1"></add>
 </httpModules> 
@@ -225,7 +225,7 @@ IHttpHandler接口声明
 
 示例：把硬盘上的图片以流的方式写在页面上
 
-~~~C#
+~~~c
 class TestHandler : IHttpHandler
 {
     public void ProcessRequest(HttpContext context)
@@ -248,7 +248,7 @@ class TestHandler : IHttpHandler
 
 Web.Config配置文件
 
-~~~C#
+~~~c
 <httpHandlers>
   <add verb="*" path="*" type="ClassLibrary1.TestHandler,ClassLibrary1"></add>
 </httpHandlers> 
@@ -268,7 +268,7 @@ Web.Config配置文件
 IHttpHandlerFactory的作用是对IHttpHandler进行管理。
 IHttpHandlerFactory接口的声明：
 
-~~~C#
+~~~c
 public interface IHttpHandlerFactory
 {
     IHttpHandler GetHandler (HttpContext context,string requestType,string url,string pathTranslated);
@@ -286,7 +286,7 @@ GetHandler返回实现IHttpHandler接口的类的实例，ReleaseHandler使工�
 
 将图片显示在页面上的Handler
 
-~~~C#
+~~~c
 class TestHandler : IHttpHandler
 {
     public void ProcessRequest(HttpContext context)
@@ -311,7 +311,7 @@ class TestHandler : IHttpHandler
 
 生成验证码的Handler 
 
-~~~C#
+~~~c
 class CodeHandler:IHttpHandler
 {
     public bool IsReusable
@@ -343,7 +343,7 @@ class CodeHandler:IHttpHandler
 
 IHttpHandler工厂
 
-~~~C#
+~~~c
 class TestHandlerFactory : IHttpHandlerFactory
 {
   public IHttpHandler GetHandler(HttpContext context, string requestType, string url, string pathTranslated)
@@ -378,7 +378,7 @@ class TestHandlerFactory : IHttpHandlerFactory
 
 配置文件：
 
-~~~C#
+~~~c
 <httpHandlers>
   <add verb="*" path="default1.cshtml,default2.cshtml" type="ClassLibrary1.TestHandlerFactory,ClassLibrary1"></add>
 </httpHandlers>
