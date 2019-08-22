@@ -1,8 +1,8 @@
 ---
 title: Vue.js生命周期备忘和解读
 date: 2017-10-01 12:23:44
-category: [Programming,Backend]
-tags: Vue.js
+category: [Frontend]
+tags: [Vue.js]
 ---
 
 

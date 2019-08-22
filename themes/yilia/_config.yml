@@ -2,8 +2,10 @@
 
 menu:
   主页: /
-  所有文章: /archives/
-  Asp.NET MVC: /tags/Asp-NET-MVC
+  所有文章: /articles/
+  .NET: /tags/NET/
+  ASP.NET MVC: /tags/ASP-NET-MVC/
+  Frontend: /categories/Frontend/
   #摄影: /photos/
   #诗词: /tags/poetry
   #javascript: /tags/Javascript

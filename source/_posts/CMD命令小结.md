@@ -1,8 +1,8 @@
 ---
 title: CMD命令小结
 date: 2014-11-28 13:40
-category: [Programming,Backend]
-tags: [Common,Backend]
+category: [Backend]
+tags: [Utility]
 ---
 
 

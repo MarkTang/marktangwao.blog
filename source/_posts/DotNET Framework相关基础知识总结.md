@@ -1,8 +1,8 @@
 ---
 title: .NET Framework相关基础知识总结
 date: 2015-06-28 16:40
-category: [Programming,Backend]
-tags: [Common,Backend]
+category: [Backend]
+tags: [Utility,.NET]
 
 ---
 
