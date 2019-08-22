@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Hello Hexo
 date: 2013-01-01 10:00:00
 category: [随笔]
 tags: [随笔]
