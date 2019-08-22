@@ -232,11 +232,11 @@ namespace CoreWebsite
         {
             WriteLog("Application - Start");
 
-            var WebHost = CreateWebHostBuilder(args);
+            var webHost = CreateWebHostBuilder(args);
 
             WriteLog("Run WebHost");
 
-            WebHost.Run();
+            webHost.Run();
 
             WriteLog("Application - End");
         }
