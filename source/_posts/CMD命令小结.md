@@ -33,6 +33,7 @@ tags: [Utility]
 17. sfc /scannow 执行系统扫描；
 18. slmgr.vbs /dlv Win授权方式查看;
 19. appwiz.cpl 打开 控制面板\所有控制面板项\程序和功能
+20. taskmgr 打开资源管理器
 ```
 
 
