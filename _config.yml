@@ -32,7 +32,7 @@ skip_render:
 # Category & Tag
 default_category: Common
 category_map: Backend, Frondend, Common, 随笔
-tag_map: C#, .NET Standard, ASP.NET MVC, ASP.NET Core MVC, Java, SQL Server, MySQL, Redis, ZooKeeper, Vue.js, Utility, Blog
+tag_map: .NET Standard, CLR, C#, ASP.NET MVC, ASP.NET Core MVC, Java, SQL Server, MySQL, Redis, ZooKeeper, Vue.js, Utility, Blog
 
 # Writing
 new_post_name: :title.md # File name of new posts
