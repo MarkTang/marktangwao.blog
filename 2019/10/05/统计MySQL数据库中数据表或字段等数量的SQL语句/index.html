@@ -18,18 +18,18 @@
   <meta name="theme-color" content="#3f51b5">
   <!-- <link rel="preconnect" href="//api.ninesix.cc" crossorigin> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
-  <meta name="description" content="#####1. 查询一个表中有多少个字段： #####2.">
+  <meta name="description" content="1、查询一个表中有多少个字段： SELECT COUNT(*) FROM information_schema. COLUMNSWHERE table_schema = ‘数据库名’AND table_name = ‘表名’; 2、查询一个数据库中有多少张表： SELECT COUNT(*) TABLES, table_schema FROM information_schema.TABLESWH">
 <meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="统计MySQL数据库中数据表或字段等数量的SQL语句">
-<meta property="og:url" content="//marktang.github.io/2019/10/08/统计MySQL数据库中数据表或字段等数量的SQL语句/index.html">
+<meta property="og:url" content="//marktang.github.io/2019/10/05/统计MySQL数据库中数据表或字段等数量的SQL语句/index.html">
 <meta property="og:site_name" content="MarkTang&#39;s blog">
-<meta property="og:description" content="#####1. 查询一个表中有多少个字段： #####2.">
+<meta property="og:description" content="1、查询一个表中有多少个字段： SELECT COUNT(*) FROM information_schema. COLUMNSWHERE table_schema = ‘数据库名’AND table_name = ‘表名’; 2、查询一个数据库中有多少张表： SELECT COUNT(*) TABLES, table_schema FROM information_schema.TABLESWH">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-08T08:20:47.874Z">
+<meta property="og:updated_time" content="2019-10-08T08:27:58.973Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="统计MySQL数据库中数据表或字段等数量的SQL语句">
-<meta name="twitter:description" content="#####1. 查询一个表中有多少个字段： #####2.">
+<meta name="twitter:description" content="1、查询一个表中有多少个字段： SELECT COUNT(*) FROM information_schema. COLUMNSWHERE table_schema = ‘数据库名’AND table_name = ‘表名’; 2、查询一个数据库中有多少张表： SELECT COUNT(*) TABLES, table_schema FROM information_schema.TABLESWH">
   
     <link rel="alternative" href="/atom.xml" title="MarkTang&#39;s blog" type="application/atom+xml">
   
@@ -260,13 +260,13 @@ var _hmt = _hmt || [];
 
 
         
-        <a href="/2019/10/08/统计MySQL数据库中数据表或字段等数量的SQL语句/" class="archive-article-date">
-  	<time datetime="2019-10-08T08:10:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-08</time>
+        <a href="/2019/10/05/统计MySQL数据库中数据表或字段等数量的SQL语句/" class="archive-article-date">
+  	<time datetime="2019-10-05T08:10:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-05</time>
 </a>
         
         
           </br>
-          <span class="post-count">本文总共14字，阅读全文大约需要1分钟</span>
+          <span class="post-count">本文总共125字，阅读全文大约需要1分钟</span>
         
       </header>
     
@@ -274,8 +274,14 @@ var _hmt = _hmt || [];
       <div class="article-content-main">
           <div class="article-entry" itemprop="articleBody">
               
-                <p>#####1. 查询一个表中有多少个字段：</p>
-<p>#####2.</p>
+                <p>1、查询一个表中有多少个字段：</p>
+<p>SELECT COUNT(*) FROM information_schema. COLUMNS<br>WHERE table_schema = ‘数据库名’<br>AND table_name = ‘表名’;</p>
+<p>2、查询一个数据库中有多少张表：</p>
+<p>SELECT COUNT(*) TABLES, table_schema FROM information_schema.TABLES<br>WHERE table_schema = ‘数据库名’<br>GROUP BY table_schema;</p>
+<p>3、查询一个数据库中一共有多少个字段：</p>
+<p>SELECT COUNT(column_name) FROM information_schema.COLUMNS<br>WHERE TABLE_SCHEMA = ‘数据库名’;</p>
+<p>4、查询一个数据库中的所有表和所有字段、字段类型及注释等信息：</p>
+<p>SELECT TABLE_NAME, column_name, DATA_TYPE, column_comment FROM information_schema.COLUMNS<br>WHERE TABLE_SCHEMA = ‘数据库名’ ;</p>
 
                 <ul class="post-copyright">
                   <li class="post-copyright-author">
@@ -284,11 +290,11 @@ var _hmt = _hmt || [];
                   </li>
                   <li class="post-copyright-link">
                     <strong>本文链接：</strong>
-                    <a href="/2019/10/08/统计MySQL数据库中数据表或字段等数量的SQL语句/" title="统计MySQL数据库中数据表或字段等数量的SQL语句">https://marktang.github.io/2019/10/08/统计MySQL数据库中数据表或字段等数量的SQL语句/</a>
+                    <a href="/2019/10/05/统计MySQL数据库中数据表或字段等数量的SQL语句/" title="统计MySQL数据库中数据表或字段等数量的SQL语句">https://marktang.github.io/2019/10/05/统计MySQL数据库中数据表或字段等数量的SQL语句/</a>
                   </li>
 <!--                   <li class="post-copyright-license">
                     <strong>最后更新于：</strong>
-                    <time datetime="2019-10-08T08:20:47.874Z" itemprop="dateUpdated">2019年10月08日 16:20:47</time>
+                    <time datetime="2019-10-08T08:27:58.973Z" itemprop="dateUpdated">2019年10月08日 16:27:58</time>
                   </li> -->
                   <li class="post-copyright-license">
                     <strong>版权声明：</strong>
@@ -404,7 +410,7 @@ var _hmt = _hmt || [];
           访客数<span id="busuanzi_value_site_uv"></span>人
         </span>
         <span class="post-count">
-          本站总共12k字
+          本站总共12.1k字
         </span>
       </div>
       <!-- <div class="yiyan" q-class="show:isComplete">『 <span class="yan"></span> 』</div> -->
