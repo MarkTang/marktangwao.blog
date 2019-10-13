@@ -10,7 +10,7 @@ tags: [Utility,MySQL]
 ##### 1、查询一个表中有多少个字段：
 
 ```sql
-SELECT COUNT(*) FROM information_schema. COLUMNS
+SELECT COUNT(*) FROM information_schema.COLUMNS
 WHERE table_schema = '数据库名'
 AND table_name = '表名';
 ```
