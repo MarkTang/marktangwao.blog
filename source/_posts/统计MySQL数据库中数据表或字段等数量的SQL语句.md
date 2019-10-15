@@ -48,7 +48,7 @@ WHERE TABLE_SCHEMA = '数据库名' ;
 ##### 5、MySQL数据库中统计一个库中的所有表的行数：
 
 ```sql
-SELECT table_name,table_rows FROM information_schema.tables 
+SELECT table_name,table_rows FROM information_schema.TABLES
 WHERE TABLE_SCHEMA = '数据库名'
 ORDER BY table_rows DESC;
 ```
