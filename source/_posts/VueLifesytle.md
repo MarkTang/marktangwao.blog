@@ -14,3 +14,8 @@ Vue.js的开发人员提供了一个Web开发人员可以在Vue.js应用程序�
 如下图所示，表示生命周期钩子顺序：
 
 ![VueLifestyle](/resource/image/VueLifesytle/Vuelifestyle.png 'Vuelifestyle')
+
+
+
+最新的生命周期图示，请参考官方文档：[点击我](https://cn.vuejs.org/v2/guide/instance.html#生命周期图示)
+
