@@ -2,7 +2,7 @@
 title: ASP.NET Core 2 学习笔记：(1) 开始
 date: 2019-02-05 20:55:17
 category: [Backend]
-tags: [ASP.NET Core MVC]
+tags: [.NET Standard, ASP.NET Core MVC]
 ---
 
 

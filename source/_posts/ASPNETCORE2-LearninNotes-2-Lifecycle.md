@@ -2,7 +2,7 @@
 title: ASP.NET Core 2 学习笔记：(2) 生命周期
 date: 2019-02-05 22:15:11
 category: [Backend]
-tags: [ASP.NET Core MVC]
+tags: [.NET Standard, ASP.NET Core MVC]
 ---
 
 

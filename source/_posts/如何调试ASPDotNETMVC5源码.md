@@ -2,7 +2,7 @@
 title: 如何调试ASP.NET MVC5源码
 date: 2019-08-08 21:40
 category: [Backend]
-tags: [ASP.NET MVC]
+tags: [.NET Standard, ASP.NET MVC]
 ---
 
 

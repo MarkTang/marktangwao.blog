@@ -2,7 +2,7 @@
 title: ASP.NET MVC中的HttpModules与HttpHandler
 date: 2018-06-28 16:40
 category: [Backend]
-tags: [ASP.NET MVC]
+tags: [.NET Standard, ASP.NET MVC]
 
 ---
 
