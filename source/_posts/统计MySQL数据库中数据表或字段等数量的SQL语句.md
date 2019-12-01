@@ -15,7 +15,7 @@ WHERE table_schema = '数据库名'
 AND table_name = '表名';
 ```
 
-
+<!--more-->
 
 ##### 2、查询一个数据库中有多少张表：
 

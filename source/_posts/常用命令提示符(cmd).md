@@ -1,5 +1,5 @@
 ---
-title: CMD命令小结
+title: 常用命令提示符(cmd)
 date: 2014-11-28 13:40
 category: [Backend]
 tags: [Utility]
