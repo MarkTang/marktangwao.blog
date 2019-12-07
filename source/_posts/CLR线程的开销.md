@@ -1,10 +1,12 @@
 ---
-title: CLR:线程的开销
+title: CLR 线程的开销
 date: 2019-08-11 13:46:56
 category: [Backend]
 tags: [.NET Standard, CLR]
 description: 
 ---
+
+
 
 
 
@@ -46,31 +48,7 @@ TEB是在用户模式（应用程序代码能快速访问的地址空间）中�
 
 Windows的一个策略是，任何时候在进程中创建一个线程，都会调用哪个进行中加载的所有DLL的DllMain方法，并向该方法传递一个DLL_THREAD_ATTACH标志。类似的，热河时候一个线程终止，都会调用进行中的所有DLL的DllMain方法，并向该方法传递一个DLL_THREAD_DETACH标志。有点DLL需要领用这些通知，为进程中创建、销毁的每个线程执行一些特殊的初始化或（资源）清理操作。例如，C-Runtime库DLL会分配一些线程本地存储状态。线程使用C-Runtime库中包含的函数时，需要用到这些状态。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
