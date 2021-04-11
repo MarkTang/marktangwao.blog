@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: MarkTang's blog #伏龙偌渊
+title: 墨客的博客 #MarkTang's blog #伏龙偌渊
 subtitle: 才疏学浅心不坏,纸短情长话略多.
 description: MarkTang
 keywords: 代码, Developer, Backend, .NET, Java, C#, SQL Server, MySQL, Developer, Frontend
-author: 偌渊 #伏龙偌渊
+author: 墨客 #偌渊 #伏龙偌渊
 language: zh-CN
 timezone: Asia/Shanghai
 
